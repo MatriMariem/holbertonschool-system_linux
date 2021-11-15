@@ -66,7 +66,7 @@ unsigned int error_handler(char *directory)
 }
 
 /**
- * main - entry point for program
+ * main - entry  point for program
  * @argc: number of arguments
  * @argv: arguments given
  * Return: 0 on success, 2 on failure

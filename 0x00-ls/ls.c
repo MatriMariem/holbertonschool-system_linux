@@ -6,7 +6,6 @@
  */
 int main(void)
 {
-	int i;
 	DIR *dir;
 	struct dirent *read;
 
@@ -17,20 +16,12 @@ int main(void)
 		exit(1);
 	}
 
-	i = 0;
 		while ((read = readdir(dir)) != NULL)
-		{
-			if (i)
-			{
-				printf(" ");
-			}
-			printf("%s", read->d_name);
+			printf("%s\t", read->d_name);
 
-			i++;
-		}
 	printf("\n");
 
-		closedir(dir);
+	closedir(dir);
 
 	return (0);
 }

@@ -18,7 +18,7 @@ int main(void)
 
 	while ((read = readdir(dir)) != NULL)
 	{
-		if(read->d_name[0] != '.')
+		if (read->d_name[0] != '.')
 			printf("%s\t", read->d_name);
 	}
 	printf("\n");
